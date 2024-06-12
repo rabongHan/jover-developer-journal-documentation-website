@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --header-height: 3.5rem;
+  --first-color: #4c84ff;
+  --first-color-alt: #3c74ff;
+  --title-color: #212121;
+  --text-color: #707070;
+  --body-color: #f7f7f7;
+  --container-color: #fff;
+
+  --font-medium: 500;
+  --font-semibold: 600;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  line-height: 1.2;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--container-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+  padding: 0 1rem;
+}
+
+.nav-logo {
+  font-weight: var(--font-medium);
+  color: var(--first-color);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 1.5rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active-link {
+  color: var(--first-color);
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.main {
+  padding-top: calc(var(--header-height) + 2rem);
+}
+
+.section {
+  padding: 4.5rem 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: var(--title-color);
+  margin-bottom: 1.5rem;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.home-container {
+  justify-content: center;
+}
+
+.home-data {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  font-weight: var(--font-semibold);
+  margin-bottom: 1rem;
+}
+
+.home-description {
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  color: var(--text-color);
+}
+
+.home-image {
+  max-width: 1600px;
+  margin-bottom: 50px;
+}
+
+.home-image img {
+  width: 90%;
+}
+
+.features-container {
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2);
+  gap: 2rem;
+}
+
+.features-content {
+  background-color: var(--container-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.features-content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.features-icon {
+  font-size: 2.5rem;
+  color: var(--first-color);
+  margin-bottom: 1rem;
+}
+
+.features-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.features-description {
+  font-size: 1rem;
+  color: var (--text-color);
+}
+
+/* Adjust the video container */
+.video-container {
+  border-radius: 10px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 25px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0px 5px 8px rgb(164, 164, 164), 
+        -8px 5px 8px rgb(164, 164, 164), 8px 5px 8px rgb(164, 164, 164);
+}
+
+.video-container video {
+  display: block;
+  width: 900px;
+  height: auto;
+  border-radius: inherit;
+  object-fit: cover; /* Ensure the video covers the container without black margins */
+  object-position: center; /* Center the video content */
+}
+
+.how-to-use-container,
+.faq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.how-to-use-container p,
+.faq-container p {
+  text-align: center;
+}
+
+.step-image {
+  max-width: 900px;
+}
+
+.step-image img {
+  width: 90%;
+}
+
+.faq-content {
+  margin-bottom: 1.5rem;
+}
+
+.faq-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+  margin-bottom: 1rem;
+}
+
+.footer {
+  background-color: var(--first-color);
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--container-color);
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-copy {
+  font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: var(--header-height);
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--container-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .nav-menu.show-menu {
+    right: 0;
+  }
+}
+
+/* Swiper container */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden; /* Ensure overflow is hidden for gradient effect */
+  padding-bottom: 70px; /* Space for arrows and pagination */
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.usage-step {
+  background-color: var(--container-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: calc(100% - 4rem);
+  text-align: center;
+}
+
+.step-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--title-color);
+}
+
+.step-description {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+/* Swiper pagination */
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  bottom: 10px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--first-color);
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* Swiper arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--first-color);
+  transition: opacity 0.3s;
+  width: 15px;
+  height: 0px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.swiper-button-next {
+  margin-left: 10px; /* Adjust margin for positioning */
+}
+
+.swiper-button-prev {
+  margin-right: 10px; /* Adjust margin for positioning */
+}

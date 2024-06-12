@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Jover 15 Documentation</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#home" class="nav-logo">Jover 15 - Developer Journal</a>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active-link"
+                ><i class="bx bx-home-alt"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#features" class="nav-link"
+                ><i class="bx bx-list-ul"></i> Features</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#how-to-use" class="nav-link"
+                ><i class="bx bx-help-circle"></i> How to Use</a
+              >
+            </li>
+            <!-- <li class="nav-item">
+              <a href="#faq" class="nav-link"
+                ><i class="bx bx-question-mark"></i> FAQ</a
+              >
+            </li> -->
+          </ul>
+          <i class="bx bx-menu nav-toggle" id="nav-toggle"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Home Section -->
+      <section class="section home" id="home">
+        <div class="container grid home-container">
+          <div class="home-data">
+            <h1 class="home-title">
+              Welcome to Jover 15 <br />Developer Journal Documentation
+            </h1>
+            <p class="home-description">
+              A comprehensive guide to using and making the most out of the
+              Jover 15 Developer Journal
+            </p>
+          </div>
+          <div class="home-image">
+            <img src="assets/images/home_page.png" alt="Home Page Image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="section features" id="features">
+        <span class="section-subtitle">Features</span>
+        <h2 class="section-title">What Our Website Offers</h2>
+        <div class="video-container">
+          <video autoplay loop muted playsinline>
+            <source src="assets/videos/e2e_test2_Jover.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="container grid features-container">
+          <!-- Feature 1 -->
+          <div class="features-content">
+            <i class="bx bx-folder-plus features-icon"></i>
+            <h3 class="features-title">Create project</h3>
+            <p class="features-description">
+              User can create several different project with own tag,
+              contributors, and description.
+            </p>
+          </div>
+          <!-- Feature 2 -->
+          <div class="features-content">
+            <i class="bx bx-box features-icon"></i>
+            <h3 class="features-title">Archive project</h3>
+            <p class="features-description">
+              Project can be active or archived so that user can easily check
+              which project is done or not.
+            </p>
+          </div>
+          <!-- Feature 3 -->
+          <div class="features-content">
+            <i class="bx bx-edit features-icon"></i>
+            <h3 class="features-title">Edit Project</h3>
+            <p class="features-description">
+              User can edit project's TODO list and link to an issue for the
+              project. TODO list allows Markdown grammar when edited
+            </p>
+          </div>
+          <!-- Feature 4 -->
+          <div class="features-content">
+            <i class="bx bx-file features-icon"></i>
+            <h3 class="features-title">Create Log</h3>
+            <p class="features-description">
+              User can create unique logs for each project. Logs include title,
+              time, contributor, description, and code snippet using CodeMirror
+            </p>
+          </div>
+          <!-- Feature 5 -->
+          <div class="features-content">
+            <i class="bx bx-calendar features-icon"></i>
+            <h3 class="features-title">View Calendar</h3>
+            <p class="features-description">
+              User can see logs on a month, week, and day calendar. In day
+              calendar, logs showcase title, editable progress bar, and code
+              snippet.
+            </p>
+          </div>
+          <!-- Feature 6 -->
+          <div class="features-content">
+            <i class="bx bx-phone-call features-icon"></i>
+            <h3 class="features-title">Feedbacks</h3>
+            <p class="features-description">
+              User can submit feedbacks through our unique sentiment widget
+            </p>
+          </div>
+          <!-- Add more features as needed -->
+        </div>
+      </section>
+
+      <!-- How to Use Section -->
+      <section class="section how-to-use" id="how-to-use">
+        <span class="section-subtitle">Usage</span>
+        <h2 class="section-title">How to Use Our Website</h2>
+        <div class="container how-to-use-container">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div class="usage-step">
+                  <h3 class="step-title">Step 1</h3>
+                  <div class="step-image">
+                    <img src="assets/images/usage1.png" alt="Usage" />
+                  </div>
+                  <p class="step-description">
+                    In main home_page, you can find the 5 buttons: "Home page",
+                    "Team page", "New", "Archive Page", and <br />
+                    "Give Feedback". Here, "New" button will create new project.
+                    <br />
+                    If you click "New" button, it will redirect to
+                    add_project_page.
+                  </p>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <div class="usage-step">
+                  <h3 class="step-title">Step 2</h3>
+                  <div class="step-image">
+                    <img src="assets/images/usage2.png" alt="Usage" />
+                  </div>
+                  <p class="step-description">
+                    In this page, you can type project name, contributor, and
+                    description. <br />
+                    In addition, you have to select tags from 4 options. If you
+                    click "submit" button, project is created. <br />
+                    All of them should be filled up, otherwise it will give you
+                    alert message.
+                  </p>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <div class="usage-step">
+                  <h3 class="step-title">Step 3</h3>
+                  <div class="step-image">
+                    <img src="assets/images/usage3.png" alt="Usage" />
+                  </div>
+                  <p class="step-description">
+                    Now, in the main home_page, you can see new project has been
+                    made. <br />
+                    If you click the project box, it will redirect to
+                    project_page.
+                  </p>
+                </div>
+              </div>
+              <!-- Slide 4 -->
+              <div class="swiper-slide">
+                <div class="usage-step">
+                  <h3 class="step-title">Step 4</h3>
+                  <div class="step-image">
+                    <img src="assets/images/usage4.png" alt="Usage" />
+                  </div>
+                  <p class="step-description">
+                    In project_page, you will see default text in TODO LIST and
+                    Link box.<br />
+                    You can edit by double-clicking each box or clicking the
+                    edit button. The red background <br />
+                    indicates that you are in edit mode. For TODO LIST, you can
+                    type either text or markdown: <br />
+                    Current available markdown is "#", "- [ ]", and "- [X]". The
+                    link doesn't have to include http:// or https://. <br />
+                    If you finish editing, then click the save button. The
+                    button will change to green confirm button for 3 secs.
+                    <br />
+                  </p>
+                </div>
+              </div>
+              <!-- Slide 5 -->
+              <div class="swiper-slide">
+                <div class="usage-step">
+                  <h3 class="step-title">Step 5</h3>
+                  <div class="step-image">
+                    <img src="assets/images/usage5.png" alt="Usage" />
+                  </div>
+                  <p class="step-description">
+                    Each markdown text is shown in checkbox or bold text depending on what you wrote <br/>
+                    In addition, https:// will be automatically appended to the link after you reload. <br/>
+                    Now if you click "All Logs" button, it will redirect to month_page.
+                  </p>
+                </div>
+              </div>
+              <!-- Slide 6 -->
+              <div class="swiper-slide">
+                <div class="usage-step">
+                  <h3 class="step-title">Step 6</h3>
+                  <div class="step-image">
+                    <img src="assets/images/usage6.png" alt="Usage" />
+                  </div>
+                  <p class="step-description">
+                    In month_page, you can check the current day and other days in current month. <br/>
+                    If you click each day in calendar, it will redirect to each day_page. 
+                  </p>
+                </div>
+              </div>
+              <!-- Slide 7 -->
+              <div class="swiper-slide">
+                <div class="usage-step">
+                  <h3 class="step-title">Step 7</h3>
+                  <div class="step-image">
+                    <img src="assets/images/usage7.png" alt="Usage" />
+                  </div>
+                  <p class="step-description">
+                    In day_page, you can see time, title, description, progress bar, and code snippet <br/>
+                    of logs for each day. You can simply add logs by clicking purple "+" button at the right top. 
+                  </p>
+                </div>
+              </div>
+              <!-- Slide 8 -->
+              <div class="swiper-slide">
+                <div class="usage-step">
+                  <h3 class="step-title">Step 8</h3>
+                  <div class="step-image">
+                    <img src="assets/images/usage8.png" alt="Usage" />
+                  </div>
+                  <p class="step-description">
+                    In add_log_page, you can type title, time, contributor, description, and code snippet for the log. <br/>
+                    All of them should be filled up, otherwise it will give you
+                    alert message. <br/> After clicking submit button at the bottom, it will redirect back to day_page.
+                  </p>
+                </div>
+              </div>
+              <!-- Slide 9 -->
+              <div class="swiper-slide">
+                <div class="usage-step">
+                  <h3 class="step-title">Step 9</h3>
+                  <div class="step-image">
+                    <img src="assets/images/usage9.png" alt="Usage" />
+                  </div>
+                  <p class="step-description">
+                    Now you can see the updated log. You can also edit code_snippet by clicking the code_snippet box. <br/>
+                    In addition, progress bar can be also adjusted, and it will be saved even though you leave the page. <br/>
+                    Lastly you can also go to week_page and month_page by <br/> clicking "week" and "month" button next to "+" button. 
+                  </p>
+                </div>
+              </div>
+              <!-- Slide 10 -->
+              <div class="swiper-slide">
+                <div class="usage-step">
+                  <h3 class="step-title">Step 10</h3>
+                  <div class="step-image">
+                    <img src="assets/images/usage10.png" alt="Usage" />
+                  </div>
+                  <p class="step-description">
+                    In the week_page, you can check the title of logs for each day in current week. <br/>
+                    Clicking each day section will redirect to day_page again.
+                  </p>
+                </div>
+              </div>
+              <!-- Slide 11 -->
+              <div class="swiper-slide">
+                <div class="usage-step">
+                  <h3 class="step-title">Step 11</h3>
+                  <div class="step-image">
+                    <img src="assets/images/usage11.png" alt="Usage" />
+                  </div>
+                  <p class="step-description">
+                    Going back to main home_page, if you click "archive" button inside the project box, <br/>
+                    it will archive the page and remove it from the main home_page. <br/>
+                    If you click "Archive Page" button at the top right, you can visit archive_page. <br/>
+                    Even though it is archived, you can still access to the project_page and log pages for archived one. 
+                  </p>
+                </div>
+              </div>
+              <!-- Slide 12 -->
+              <div class="swiper-slide">
+                <div class="usage-step">
+                  <h3 class="step-title">Step 12</h3>
+                  <p class="step-description">
+                    In main home_page, "Team Page" button will show our Jover 15's github page. <br/>
+                    If this documentation website was useful, don't forget to revisit the developer journal website <br/>
+                    and press "Give Feedback" button! Thank you.
+                  </p>
+                </div>
+              </div>
+              <!-- Add more slides as needed -->
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <!-- <section class="section faq" id="faq">
+        <span class="section-subtitle">FAQ</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="container faq-container">
+          <div class="faq-content">
+            <i class="bx bx-question-mark faq-icon"></i>
+            <h3 class="faq-title">Question 1</h3>
+            <p class="faq-description">Answer to question 1.</p>
+          </div>
+          <div class="faq-content">
+            <i class="bx bx-question-mark faq-icon"></i>
+            <h3 class="faq-title">Question 2</h3>
+            <p class="faq-description">Answer to question 2.</p>
+          </div>
+        </div>
+      </section> -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <h1 class="footer-title">Jover 15 - Developer Journal</h1>
+        <p class="footer-copy">
+          &#169; 2024 Group 15 [Jover]. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
